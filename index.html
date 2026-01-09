@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>from_PS_lens | VS Pranith Sai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-brand">from_PS_lens</div>
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- SECTION 1: BRAND HERO -->
+  <section id="hero" class="section hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="pre-title">Visual Stories by</p>
+        <h1>from_PS_lens</h1>
+        <p class="operator">Operated by <span>VS Pranith Sai</span></p>
+        <p class="handle">Instagram: <span>@from_ps_lens</span></p>
+        <button class="primary-btn" data-scroll-target="#gallery">
+          View Pictures Now
+        </button>
+      </div>
+
+      <div class="hero-camera">
+        <a href="https://www.instagram.com/from_ps_lens/?igsh=MW55djQ4anZrMHZ6bw%3D%3D#" target="_blank" rel="noopener" class="instagram-btn">
+          Visit Instagram Profile
+        </a>
+        <div class="camera-orbit">
+          <div class="camera-3d">
+            <div class="camera-face camera-front">
+              <span class="lens-dot"></span>
+            </div>
+            <div class="camera-face camera-back"></div>
+            <div class="camera-face camera-left"></div>
+            <div class="camera-face camera-right"></div>
+            <div class="camera-face camera-top"></div>
+            <div class="camera-face camera-bottom"></div>
+          </div>
+        </div>
+        <p class="camera-caption">Vintage vibes in motion.</p>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: GALLERY SLIDER -->
+  <section id="gallery" class="section gallery">
+    <div class="section-heading">
+      <p class="pre-title">Gallery</p>
+      <h2>View Pictures Now</h2>
+      <p class="sub-text">
+        Swipe through the frames. Hover to feel the motion. Click to see details.
+      </p>
+    </div>
+
+    <div class="slider-wrapper">
+      <button class="slider-btn prev" aria-label="Previous photo">&#10094;</button>
+      <div class="slider">
+        <!-- These src names assume you move/rename your images from Pictures/ to match -->
+        <div class="slide active" data-caption="Streetlight whispers – leaves caught in a midnight spotlight.">
+          <img src="Pictures/night-leaves-streetlight..jpg" alt="Night streetlight through leaves" />
+        </div>
+
+        <div class="slide" data-caption="Raindrops resting on petals, holding the last light of the storm.">
+          <img src="Pictures/raindrop-petals.jpg" alt="White flowers with raindrops" />
+        </div>
+
+        <div class="slide" data-caption="City slows down as the sky paints its own reflection on the lake.">
+          <img src="Pictures/lakeside-sunset.jpg" alt="Lakeside sunset reflection" />
+        </div>
+
+        <div class="slide" data-caption="Name in focus, world blurred – frames of a personal story.">
+          <img src="Pictures/pranith-keychain.jpg" alt="Keychain with the name Pranith Sai" />
+        </div>
+
+        <div class="slide" data-caption="One drop holding a whole park upside down for a second.">
+          <img src="Pictures/leaf-droplet-closeup.jpg" alt="Droplet hanging under a branch" />
+        </div>
+
+        <div class="slide" data-caption="Soft sunrise over the river, quietly waking up the city.">
+          <img src="Pictures/river-sunrise.jpg" alt="Sunrise over the river" />
+        </div>
+
+        <div class="slide" data-caption="Light breaks through clouds and cables, drawing lines in the sky.">
+          <img src="Pictures/city-sky-rays.jpg" alt="Sun rays behind clouds in the city" />
+        </div>
+
+        <div class="slide" data-caption="Tiny traveler, sharp in focus, moving through a blurred world.">
+          <img src="Pictures/caterpillar-macro.jpg" alt="Macro shot of a caterpillar" />
+        </div>
+
+        <div class="slide" data-caption="A single droplet holding colors, balancing on the edge of a leaf.">
+          <img src="Pictures/leaf-droplet-closeup.jpg" alt="Closeup of water droplet on a leaf" />
+        </div>
+
+        <div class="slide" data-caption="Red cycle, quiet street – a frame that feels like a paused summer day.">
+          <img src="Pictures/red-cycle-house.jpg" alt="Red bicycle outside a house" />
+        </div>
+
+        <div class="slide" data-caption="Sea spray explodes into gold dust in front of the setting sun.">
+          <img src="Pictures/sea-splash-sunset.jpg" alt="Sea splash at golden sunset" />
+        </div>
+
+        <div class="slide" data-caption="Evening light stretching shadows as people walk into the glow.">
+          <img src="Pictures/evening-walk-shadows.jpg" alt="People walking under trees at sunset" />
+        </div>
+      </div>
+      <button class="slider-btn next" aria-label="Next photo">&#10095;</button>
+    </div>
+
+    <div class="slider-caption">
+      <span id="slide-caption">Streetlight whispers – leaves caught in a midnight spotlight.</span>
+    </div>
+
+    <div class="slider-dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+      <span class="dot" data-index="4"></span>
+      <span class="dot" data-index="5"></span>
+      <span class="dot" data-index="6"></span>
+      <span class="dot" data-index="7"></span>
+      <span class="dot" data-index="8"></span>
+      <span class="dot" data-index="9"></span>
+      <span class="dot" data-index="10"></span>
+      <span class="dot" data-index="11"></span>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close" id="lightbox-close">&times;</span>
+      <img id="lightbox-img" src="" alt="Full view" />
+      <p id="lightbox-text"></p>
+    </div>
+  </div>
+
+  <!-- SECTION 3: ABOUT -->
+  <section id="about" class="section about">
+    <div class="section-heading">
+      <p class="pre-title">About</p>
+      <h2>Behind from_PS_lens</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Brand</h3>
+        <p><strong>Name:</strong> from_PS_lens</p>
+        <p><strong>Operator:</strong> VS Pranith Sai</p>
+      </div>
+
+      <div class="about-card">
+        <h3>Contact</h3>
+        <p><strong>Email:</strong> <a href="mailto:vspranith07@gmail.com">vspranith07@gmail.com</a></p>
+        <p>
+          <strong>Instagram:</strong>
+          <a href="https://www.instagram.com/from_ps_lens/?igsh=MW55djQ4anZrMHZ6bw%3D%3D#" target="_blank" rel="noopener">
+            @from_ps_lens
+          </a>
+        </p>
+        <p class="visit-ig">
+          Visit my Instagram profile and step into my world of frames.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>Vision</h3>
+        <p>
+          Each frame from <strong>from_PS_lens</strong> is a pause button on time –
+          capturing mood, motion, and memory without disturbing the purity of the
+          visual. Smooth, cinematic flows, raw honest light.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>&copy; <span id="year"></span> from_PS_lens · VS Pranith Sai</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
